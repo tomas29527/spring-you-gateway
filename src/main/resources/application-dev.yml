@@ -18,6 +18,8 @@ spring:
         filters:
         - StripPrefix=1
         - AddResponseHeader=X-Response-Default-Foo, Default-Bar
+      default-filters:
+      - Elapsed=true
 server:
   port: 10000
 
